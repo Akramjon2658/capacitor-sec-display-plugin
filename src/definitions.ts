@@ -1,3 +1,5 @@
 export interface SecondaryDisplayPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  initialize(): Promise<void>;
+  showContent(options: { url: string }): Promise<void>;
+  sendMessage(options: { message: Record<string, any> }): Promise<void>;
 }

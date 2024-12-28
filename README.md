@@ -13,24 +13,46 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`initialize()`](#initialize)
+* [`showContent(...)`](#showcontent)
+* [`sendMessage(...)`](#sendmessage)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### initialize()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+initialize() => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+--------------------
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+### showContent(...)
+
+```typescript
+showContent(options: { url: string; }) => Promise<void>
+```
+
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ url: string; }</code> |
+
+--------------------
+
+
+### sendMessage(...)
+
+```typescript
+sendMessage(options: { message: string; }) => Promise<void>
+```
+
+| Param         | Type                              |
+| ------------- | --------------------------------- |
+| **`options`** | <code>{ message: string; }</code> |
 
 --------------------
 
