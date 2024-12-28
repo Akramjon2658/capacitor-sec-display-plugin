@@ -16,6 +16,7 @@ npx cap sync
 * [`initialize()`](#initialize)
 * [`showContent(...)`](#showcontent)
 * [`sendMessage(...)`](#sendmessage)
+* [Type Aliases](#type-aliases)
 
 </docgen-index>
 
@@ -47,13 +48,23 @@ showContent(options: { url: string; }) => Promise<void>
 ### sendMessage(...)
 
 ```typescript
-sendMessage(options: { message: string; }) => Promise<void>
+sendMessage(options: { message: Record<string, any>; }) => Promise<void>
 ```
 
-| Param         | Type                              |
-| ------------- | --------------------------------- |
-| **`options`** | <code>{ message: string; }</code> |
+| Param         | Type                                                                       |
+| ------------- | -------------------------------------------------------------------------- |
+| **`options`** | <code>{ message: <a href="#record">Record</a>&lt;string, any&gt;; }</code> |
 
 --------------------
+
+
+### Type Aliases
+
+
+#### Record
+
+Construct a type with a set of properties K of type T
+
+<code>{ [P in K]: T; }</code>
 
 </docgen-api>
